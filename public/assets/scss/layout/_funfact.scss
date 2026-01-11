@@ -1,0 +1,306 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  11. funfact css start
+/*----------------------------------------*/
+.it-funtact {
+  &-space {
+    padding-top: 175px;
+    padding-bottom: 165px;
+    @media #{$lg,$md,$xs} {
+      padding: 100px 0;
+    }
+  }
+  &-mumber {
+    color: var(--it-common-white);
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+    @media #{$xl} {
+      font-size: 70px;
+    }
+    @media #{$lg} {
+      font-size: 60px;
+    }
+    @media #{$md} {
+      font-size: 70px;
+    }
+    @media #{$xs} {
+      font-size: 60px;
+    }
+  }
+  &-item {
+    padding: 77px 18px;
+    position: relative;
+    @media #{$lg,$md,$xs} {
+      padding: 20px 18px;
+    }
+    &.active {
+      &::after {
+        background-color: var(--it-common-white);
+      }
+      & .it-funtact-mumber {
+        color: var(--it-common-black);
+        @media #{$lg,$md,$xs} {
+          color: var(--it-common-white);
+        }
+      }
+      & span.it-funfact-text {
+        color: var(--it-common-black);
+        @media #{$lg,$md,$xs} {
+          color: var(--it-common-white);
+        }
+      }
+    }
+    &::after {
+      height: 100%;
+      width: 100%;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid var(--it-common-white);
+      transform: rotate(112deg);
+      transition: 0.3s;
+      @media #{$xxxl} {
+        transform: rotate(112deg);
+      }
+      @media #{$xl} {
+        height: 95%;
+        width: 95%;
+        transform: rotate(117deg);
+      }
+      @media #{$lg,$md,$xs} {
+        display: none;
+      }
+    }
+    & span.it-funfact-text {
+      font-weight: 700;
+      font-size: 18px;
+      color: #888888;
+      position: relative;
+      z-index: 1;
+      transition: 0.3s;
+      @media #{$lg} {
+        font-size: 16px;
+      }
+    }
+  }
+  &-shape {
+    &-1 {
+      position: absolute;
+      right: 6%;
+      top: 26%;
+      animation: tpupdown 0.8s infinite alternate;
+      @media #{$xxxl} {
+        right: 2%;
+        top: 20%;
+      }
+      @media #{$xxl} {
+        right: 2%;
+        top: 20%;
+      }
+    }
+    &-2 {
+      position: absolute;
+      left: 6%;
+      bottom: 11%;
+      animation: tpupdown 0.8s infinite alternate;
+      @media #{$xxl} {
+        left: 2%;
+        bottom: 8%;
+      }
+    }
+  }
+}
+.it-funfact-3 {
+  &-number-sm {
+    & > span {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--it-common-white);
+      display: block;
+      margin-bottom: 85px;
+      transition: 0.3s;
+    }
+  }
+  &-text {
+    text-align: end;
+    & span {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+      display: block;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      text-transform: uppercase;
+      @media #{$xl,$lg} {
+        font-size: 15px;
+        line-height: 28px;
+      }
+      @media #{$md,$xs} {
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+  }
+  &-number {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 0;
+    transition: 0.3s;
+    @media #{$xl} {
+      font-size: 50px;
+    }
+    @media #{$lg} {
+      font-size: 45px;
+    }
+    @media #{$md,$xs} {
+      font-size: 40px;
+    }
+    & i {
+      font-style: normal;
+    }
+  }
+  &-border {
+    border: 1px solid #393838;
+    @media #{$md,$xs} {
+      border: none;
+    }
+  }
+  &-item-box {
+    position: relative;
+    border-right: 1px solid #393838;
+    @media #{$md,$xs} {
+      border-right: none;
+    }
+    &.item-border {
+      border-right: none;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 110%;
+      width: 110%;
+      background-color: var(--it-common-white);
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+    }
+    &.active {
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+      & .it-funfact-3-number-sm {
+        & span {
+          color: var(--it-common-black);
+        }
+      }
+      & .it-funfact-3-text {
+        & span {
+          color: var(--it-common-black);
+        }
+      }
+      & .it-funfact-3-number {
+        color: var(--it-common-black);
+      }
+    }
+  }
+  &-item {
+    padding: 40px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
+  }
+}
+.it-funfact-4 {
+  &-ml {
+    margin-left: -85px;
+    @media #{$xxl} {
+      margin-left: -20px;
+    }
+    @media #{$xl} {
+      margin-left: -10px;
+    }
+    @media #{$lg,$md,$xs} {
+      margin-left: 0;
+    }
+  }
+  &-item {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    height: 358px;
+    width: 358px;
+    border-radius: 50%;
+    border: 1px solid var(--it-border-3);
+    transition: 0.3s;
+    z-index: -1;
+    @media #{$xxl} {
+      height: 330px;
+      width: 330px;
+    }
+    @media #{$xl} {
+      height: 300px;
+      width: 300px;
+    }
+    @media #{$lg} {
+      border: none;
+      width: auto;
+      height: auto;
+      padding: 50px 15px;
+    }
+    @media #{$md,$xs} {
+      border: none;
+      width: auto;
+      height: auto;
+      padding: 20px 15px;
+    }
+    &:hover {
+      border-color: var(--it-theme-1);
+    }
+  }
+  &-icon {
+    & > span {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  &-text {
+    & span.it-funfact-4-title {
+      font-weight: 700;
+      font-size: 18px;
+      @media #{$lg,$md,$xs} {
+        font-size: 15px;
+      }
+    }
+  }
+  &-number {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 5px;
+    @media #{$xxl} {
+      font-size: 50px;
+    }
+    @media #{$xl} {
+      font-size: 45px;
+    }
+    @media #{$lg} {
+      font-size: 50px;
+    }
+    @media #{$md,$xs} {
+      font-size: 48px;
+    }
+    & i {
+      font-style: normal;
+    }
+  }
+}

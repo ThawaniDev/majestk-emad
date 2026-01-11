@@ -1,0 +1,316 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  21. testimonial css start
+/*----------------------------------------*/
+
+.it-testimonial {
+  &-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::after {
+      content: '';
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: rgb(14, 14, 14);
+      opacity: 0.78;
+    }
+  }
+  &-item {
+    padding-top: 135px;
+    padding-bottom: 140px;
+    @media #{$lg,$md,$xs} {
+      padding: 100px 0;
+    }
+  }
+  &-text {
+    & p {
+      color: var(--it-common-white);
+      line-height: 42px;
+      font-weight: 500;
+      font-size: 32px;
+      margin-bottom: 40px;
+      @media #{$lg} {
+        font-size: 28px;
+        & br {
+          display: none;
+        }
+      }
+      @media #{$md} {
+        font-size: 25px;
+        & br {
+          display: none;
+        }
+      }
+      @media #{$xs} {
+        font-size: 19px;
+        & br {
+          display: none;
+        }
+      }
+    }
+  }
+  &-author {
+    &-thumb {
+      margin-right: 30px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 1px solid var(--it-common-white);
+        border-radius: 50%;
+        transform: scale(1.2);
+      }
+      & img {
+        height: 76px;
+        width: 76px;
+        border-radius: 50%;
+      }
+    }
+    &-box {
+      & h5 {
+        font-weight: 600;
+        font-family: var(--it-ff-heading);
+        margin-bottom: 5px;
+      }
+      & span {
+        color: var(--it-common-white);
+      }
+    }
+  }
+  &-arrow-box {
+    height: 60px;
+    line-height: 60px;
+    @media #{$xl,$lg,$md,$xs} {
+      display: none;
+    }
+    & .slider-prev {
+      position: absolute;
+      left: 0%;
+      bottom: 0%;
+      z-index: 2;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.102);
+      padding-left: 465px;
+      transition: 0.3s;
+      & button {
+        font-size: 22px;
+        color: var(--it-common-white);
+        transition: 0.3s;
+      }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        & button {
+          color: var(--it-theme-1);
+        }
+      }
+    }
+    & .slider-next {
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+      z-index: 2;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.102);
+      padding-right: 465px;
+      text-align: end;
+      transition: 0.3s;
+      & button {
+        font-size: 22px;
+        color: var(--it-common-white);
+        transition: 0.3s;
+      }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        & button {
+          color: var(--it-theme-1);
+        }
+      }
+      &.active {
+        background-color: rgba(255, 255, 255, 0.2);
+        & button {
+          color: var(--it-theme-1);
+        }
+      }
+    }
+  }
+}
+.it-testimonial-2 {
+  &-top-slider-item {
+    padding: 10px 20px;
+    border: 1px solid #373737;
+    cursor: pointer;
+  }
+  &-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--it-common-white);
+  }
+  &-avatar {
+    & img {
+      margin-right: 20px;
+    }
+  }
+  &-content {
+    & p {
+      color: #888888;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  &-bottom-slider-item {
+    text-align: center;
+    margin-bottom: 40px;
+    & p {
+      font-size: 32px;
+      color: var(--it-common-white);
+      line-height: 42px;
+      @media #{$lg} {
+        font-size: 25px;
+      }
+      @media #{$md} {
+        font-size: 22px;
+      }
+      @media #{$xs} {
+        font-size: 20px;
+      }
+    }
+  }
+  &-top-wrap {
+    margin: 0px 80px;
+    margin-bottom: -40px;
+    border-right: 1px solid #373737;
+    border-left: 1px solid #373737;
+    background-color: var(--it-common-black);
+    position: relative;
+    z-index: 55;
+    @media #{$xs} {
+      margin: 0 20px;
+      margin-bottom: -40px;
+    }
+    @media #{$sm} {
+      margin: 0 50px;
+      margin-bottom: -40px;
+    }
+  }
+  &-bottom-wrap {
+    border: 1px solid #373737;
+    padding: 130px 120px;
+    @media #{$xs} {
+      padding: 100px 15px;
+    }
+    & .slick-dots {
+      text-align: center;
+      margin-top: 50px;
+      & li {
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
+        margin: 0px 5px;
+        &.slick-active {
+          & button {
+            background-color: var(--it-theme-1);
+          }
+        }
+        & button {
+          font-size: 0;
+          height: 10px;
+          width: 10px;
+          background-color: var(--it-common-white);
+          display: inline-block;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  &-shape-1 {
+    position: absolute;
+    bottom: 10%;
+    right: 260px;
+    z-index: 1;
+    animation: tptranslateX2 2s infinite alternate;
+    @media #{$xxxl} {
+      right: 160px;
+    }
+    @media #{$xxl} {
+      right: 60px;
+    }
+  }
+}
+
+.slick-current {
+  & .it-testimonial-main-wrap {
+    & .it-testimonial-2-top-slider-item {
+      border-color: var(--it-theme-1);
+    }
+  }
+}
+.it-testimonial-5 {
+  &-item {
+    margin-left: 70px;
+    padding: 50px 40px 50px 95px;
+    border: 1px solid #454343;
+    transition: 0.3s;
+    @media #{$xs} {
+      margin-left: 0;
+      padding: 50px 20px 50px;
+    }
+    &:hover {
+      border-color: #fff;
+    }
+  }
+  &-thumb {
+    position: absolute;
+    top: 50%;
+    left: -65px;
+    transform: translateY(-50%);
+    @media #{$xs} {
+      position: static;
+      margin-bottom: 30px;
+      transform: translateY(0%);
+    }
+    & img {
+      border-radius: 50%;
+      height: 130px;
+      width: 130px;
+    }
+  }
+  &-star {
+    & i {
+      color: var(--it-theme-1);
+    }
+  }
+  &-author-info {
+    & h5 {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 8px;
+      @media #{$xs} {
+        font-size: 20px;
+      }
+    }
+  }
+  &-text {
+    & p {
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+  }
+  &-active {
+    margin: -30px;
+    padding: 30px;
+  }
+}

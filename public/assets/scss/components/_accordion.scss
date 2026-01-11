@@ -1,0 +1,150 @@
+@use '../utils' as *;
+
+.it-customs-accordion {
+  & .accordion-items {
+    margin-bottom: 0;
+  }
+  & .accordion-buttons {
+    position: relative;
+    width: 100%;
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--it-common-white);
+    text-align: left;
+    padding-left: 30px;
+    @media #{$md} {
+      font-size: 16px;
+    }
+    @media #{$xs} {
+      font-size: 15px;
+    }
+    @media #{$sm} {
+      font-size: 17px;
+    }
+    &::after {
+      position: absolute;
+      content: '\f068';
+      font-family: 'Font Awesome 5 Pro';
+      top: 11px;
+      left: 0px;
+      font-weight: 700;
+      font-size: 16px;
+      opacity: 1;
+      color: var(--it-theme-1);
+    }
+
+    &[aria-expanded='false'] {
+      &::after {
+        content: '\f067';
+      }
+    }
+  }
+
+  &[aria-expanded='false'] {
+    position: relative;
+    z-index: 99;
+  }
+
+  & .accordion-body {
+    padding-top: 0;
+    padding-left: 30px;
+    padding-bottom: 7px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0 0px 16px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    @media #{$xl} {
+      font-size: 15px;
+    }
+    @media #{$lg} {
+      font-size: 14px;
+    }
+    @media #{$md,$xs} {
+      font-size: 14px;
+    }
+    @media #{$sm} {
+      font-size: 15px;
+    }
+  }
+}
+.it-customs-accordion-2 {
+  & .accordion-items {
+    margin-bottom: 10px;
+  }
+  & .accordion-buttons {
+    position: relative;
+    width: 100%;
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    padding: 21px 30px;
+    padding-left: 75px;
+    color: var(--it-common-white);
+    background-color: var(--it-common-black);
+    @media #{$md} {
+      font-size: 16px;
+    }
+    @media #{$xs} {
+      font-size: 15px;
+    }
+    @media #{$sm} {
+      font-size: 17px;
+    }
+    &::after {
+      position: absolute;
+      content: '\f068';
+      font-family: 'Font Awesome 5 Pro';
+      top: 19px;
+      left: 30px;
+      font-weight: 700;
+      font-size: 12px;
+      opacity: 1;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      width: 26px;
+      border-radius: 50%;
+      background-color: var(--it-theme-1);
+      color: var(--it-common-white);
+    }
+
+    &[aria-expanded='false'] {
+      &::after {
+        content: '\f067';
+      }
+    }
+  }
+
+  &[aria-expanded='false'] {
+    position: relative;
+    z-index: 99;
+  }
+
+  & .accordion-body {
+    padding: 15px 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: var(--it-common-black);
+    @media #{$xl} {
+      font-size: 15px;
+    }
+    @media #{$lg} {
+      font-size: 14px;
+    }
+    @media #{$md,$xs} {
+      font-size: 14px;
+    }
+    @media #{$sm} {
+      font-size: 15px;
+    }
+  }
+}

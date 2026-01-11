@@ -1,0 +1,105 @@
+@use '../utils' as *;
+
+
+
+
+.it-breadcrumb-bg{
+    padding-top: 315px;
+    padding-bottom: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    @media #{$lg}{
+        padding-top: 250px;
+        padding-bottom: 100px;
+    }
+    @media #{$md}{
+        padding-top: 220px;
+        padding-bottom: 100px;
+        background-position: center;
+    }
+    @media #{$xs}{
+        padding-top: 200px;
+        padding-bottom: 100px;
+        background-position: center;
+    }
+    &::after{
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(24, 24, 24);
+        opacity: 0.702;
+    }
+}
+
+.it-breadcrumb{
+    &-title{
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 0;    
+        @media #{$lg}{
+            font-size: 38px;
+        } 
+        @media #{$md}{
+            font-size: 43px;
+        } 
+        @media #{$xs}{
+            font-size: 37px;
+        } 
+        @media #{$sm}{
+            font-size: 30px;
+        } 
+    }
+    &-subtitle{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        color: var(--it-common-white);   
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 15px;
+        @media #{$lg,$md,$xs}{
+            font-size: 14px;
+        }
+    }
+    &-content {
+        @media #{$xs}{
+            margin-bottom: 30px;
+        } 
+        @media #{$sm}{
+            margin-bottom:0px;
+        } 
+    }
+    &-list{
+        display: inline-block;
+        border-radius: 30px;
+        & span {
+            color: var(--it-common-white);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: uppercase;
+            @media #{$lg,$md,$xs}{
+                font-size: 14px;
+            }
+            &.dvdr{
+                & i{
+                    color: var(--it-common-white);
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+            }
+            & b {
+                color: var(--it-theme-1);
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,194 @@
+{
+  "navigation": {
+    "home": "HOME",
+    "pages": "PAGES",
+    "aboutUs": "About Us",
+    "service": "Service",
+    "contact": "CONTACT"
+  },
+  "home": {
+    "heroTitle": "LEADING SOLUTIONS FOR TRADE & MARKETING",
+    "heroSubtitle": "We Help Companies Achieve Their Goals",
+    "heroDescription": "Your reliable partner in today's fast-paced business world, offering integrated and innovative commercial solutions.",
+    "exploreMore": "EXPLORE MORE",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "seeMore": "See More",
+    "featuredWork": "Featured Work",
+    "ctaTitle": "Let's build your business future ",
+    "ctaTitleHighlight": "together.",
+    "awardsWon": "Awards Won",
+    "visitedConference": "Visited Conference",
+    "projectsWorldwide": "Projects Worldwide"
+  },
+  "about": {
+    "pageTitle": "About Us",
+    "whoWeAre": "WHO WE ARE",
+    "sectionTitle": "Leading Solutions for Trade and Marketing",
+    "description": "New Majestic is a premier trade and marketing solutions company, dedicated to helping businesses expand their reach and achieve sustainable growth.",
+    "ourVision": "Our Vision",
+    "visionText": "To be the leading partner for businesses seeking comprehensive trade and marketing excellence.",
+    "ourMission": "Our Mission",
+    "missionText": "Delivering innovative solutions that drive growth, build brands, and create lasting market impact.",
+    "understandingNeeds": "Understanding Needs: Precise Analysis of Your Requirements",
+    "buildingTrust": "Building Trust: Transparency and Credibility First",
+    "commitmentInnovation": "Commitment to Innovation: Keeping Pace with Market Developments",
+    "yearsExperience": "Years of Experience",
+    "happyClients": "Happy Clients",
+    "projectsCompleted": "Projects Completed",
+    "teamMembers": "Team Members"
+  },
+  "services": {
+    "pageTitle": "Our Services",
+    "subtitle": "WHAT WE ACTUALLY OFFER",
+    "sectionTitle": "Check Our Popular Services",
+    "viewMoreServices": "VIEW MORE SERVICES",
+    "generalTrade": "General Trade",
+    "generalTradeDesc": "Efficient import and distribution of products with guaranteed quality for your business needs.",
+    "comprehensiveMarketing": "Comprehensive Marketing",
+    "comprehensiveMarketingDesc": "Full-service marketing solutions from strategy development to campaign execution.",
+    "campaignManagement": "Campaign Management",
+    "campaignManagementDesc": "Expert management of marketing campaigns to maximize ROI and brand visibility.",
+    "brandBuilding": "Brand Building",
+    "brandBuildingDesc": "Strategic brand development and positioning to establish market presence.",
+    "marketResearch": "Market Research",
+    "marketResearchDesc": "In-depth market analysis and consumer insights to inform business decisions.",
+    "detailsTitle": "Service Details"
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "subtitle": "GET IN TOUCH",
+    "sectionTitle": "Contact With Us",
+    "description": "Have questions or need assistance? Our team is ready to help you with your trade and marketing needs.",
+    "yourName": "Your Name*",
+    "yourEmail": "Your Email*",
+    "yourWebsite": "Your Website*",
+    "tellUsSomething": "Tell us Something",
+    "getInTouch": "GET IN TOUCH",
+    "sendMessage": "Send Message",
+    "address": "Address",
+    "addressValue": "301 Princes Street, El-Mahall Damietta Egypt-104",
+    "phone": "Phone",
+    "email": "Email",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Sunday - Thursday: 9:00 AM - 5:00 PM"
+  },
+  "footer": {
+    "description": "Your trusted partner for comprehensive trade solutions and innovative marketing strategies.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactInfo": "Contact Info",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "subscribeText": "Subscribe to our newsletter for the latest updates.",
+    "subscribe": "Subscribe",
+    "enterEmail": "Enter your email",
+    "copyright": "© 2024 New Majestic. All Rights Reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "tryAgain": "Try Again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "menu": "Menu",
+    "search": "Search",
+    "searchPlaceholder": "Search here..."
+  },
+  "shop": {
+    "pageTitle": "Shop",
+    "detailsTitle": "Shop Details"
+  },
+  "cart": {
+    "pageTitle": "Cart"
+  },
+  "checkout": {
+    "pageTitle": "Checkout"
+  },
+  "faq": {
+    "pageTitle": "FAQ"
+  },
+  "portfolio": {
+    "pageTitle": "Portfolio",
+    "detailsTitle": "Portfolio Details"
+  },
+  "error": {
+    "pageTitle": "Error",
+    "somethingWentWrong": "Something Went Wrong",
+    "notFoundTitle": "404 Error",
+    "errorLabel": "Error",
+    "somethingNotRight": "Something’s Not Right",
+    "somethingWrong": "Something went wrong!",
+    "notFoundDesc": "We can’t find the page you are looking for.",
+    "unexpectedError": "An unexpected error occurred. Please try again later.",
+    "backToHome": "Back to home",
+    "tryAgain": "Try Again"
+  },
+  "blog": {
+    "listTitle": "Blog List",
+    "sidebarTitle": "Blog Sidebar",
+    "detailsTitle": "Blog Details",
+    "subtitle": "Blog"
+  },
+  "team": {
+    "pageTitle": "Our Team",
+    "subtitle": "MEET WITH AWESOME TEAM",
+    "sectionTitle": "Team that Builds Ideas Driven by the Future",
+    "detailsTitle": "Team Details"
+  },
+  "portfolio": {
+    "pageTitle": "Portfolio",
+    "subtitle": "OUR LATEST PROJECTS",
+    "sectionTitle": "A quick glance of our past projects.",
+    "viewMoreProjects": "VIEW MORE PROJECTS",
+    "detailsTitle": "Portfolio Details"
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "listTitle": "Blog List",
+    "sidebarTitle": "Blog Sidebar",
+    "detailsTitle": "Blog Details",
+    "subtitle": "Blog",
+    "sectionTitle": "Find inspiration in our blog posts",
+    "description": "We have transform your ideas into remarkable digital products with an innovative and contemporary style. We specialize in creative minimalist projects. We have many years of experience in the profession. View our portfolio with detailed descriptions and order for yourself! We have transform your ideas into remark digital products with an innovative style.",
+    "viewAllPost": "VIEW ALL POST"
+  },
+  "testimonial": {
+    "subtitle": "WHAT WE ACTUALLY OFFER",
+    "sectionTitle": "What Our Client Say About New Majestic"
+  },
+  "choose": {
+    "subtitle": "WHY CHOOSE US",
+    "sectionTitle": "Why You Should Choose Why Choose New Majestic",
+    "description": "Where proceduralize options version sorry not yet. Lauproductive last break. People staircase team base performance catching socialize whistles. Monday wider boil overflow place",
+    "deliverAwesomeIdea": "Deliver Awesome Idea",
+    "deliverAwesomeIdeaDesc": "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod temp"
+  },
+  "breadcrumb": {
+    "companyName": "New Majestic - Trade & Marketing Solutions",
+    "home": "Home",
+    "titleNotFound": "Title Not Found",
+    "noSubtitle": "No Subtitle"
+  },
+  "aboutSections": {
+    "specialization": "We Specialize in creative Minimalist Projects",
+    "specializationDesc": "We have transform your ideas into remarkable digital products with an innovative and contemporary style. We specialize in creative .",
+    "benefitsTitle": "When you work with fusion you are benefiting from:",
+    "discoverMore": "DISCOVER MORE",
+    "yearsExperience": "Years of Experience",
+    "unlockPotential": "We Unlock the Potential of Your Business With Design Agency",
+    "unlockDesc": "Lorem ipsum dolor sit amet consectetur. Blandit lorem int aliquam commodo nunc. Est cras facilisi neque in tortor ut montes sed purus semper in in sollicitudin ut.",
+    "deliverAwesomeIdea": "Deliver Awesome Idea",
+    "deliverDesc": "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod temp",
+    "strategicPartner": "Your Strategic Partner"
+  },
+  "metadata": {
+    "title": "New Majestic - Trade & Marketing Solutions",
+    "description": "Leading solutions for trade and marketing"
+  }
+}

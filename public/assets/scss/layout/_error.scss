@@ -1,0 +1,70 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  10. error css start
+/*----------------------------------------*/
+.it-error{
+    &-shape {
+        position: absolute;
+        top: -38%;
+        left: 0;
+    }
+    &-number{
+        font-weight: 700;
+        font-size: 240px;
+        margin-bottom: 0px;
+        color: var(--it-theme-1);
+        @media #{$xxl}{
+            font-size: 200px;
+        }
+        @media #{$xl}{
+            font-size:185px;
+        }
+        @media #{$lg}{
+            font-size:170px;
+        }
+        @media #{$md}{
+            font-size:150px;
+        }
+        @media #{$xs}{
+            font-size:100px;
+        }
+    }
+    &-content {
+        & > span {
+            font-size: 48px;
+            font-weight: 700;
+            display: block;
+            padding-bottom: 20px;
+            color: var(--it-common-white);
+            @media #{$xxl}{
+                font-size: 40px;
+            }
+            @media #{$xl}{
+                font-size: 36px;
+            }
+            @media #{$lg}{
+                font-size: 30px;
+            }
+            @media #{$lg}{
+                font-size: 30px;
+            }
+            @media #{$md}{
+                font-size: 30px;
+            }
+            @media #{$xs}{
+                font-size: 25px;
+            }
+            & b {
+                color: var(--it-theme-1);
+            }
+        }
+        & p {
+            color: #888888;
+            margin-bottom: 50px;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+        }
+    }
+}

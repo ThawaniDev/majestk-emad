@@ -1,0 +1,41 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  23. value css start
+/*----------------------------------------*/
+.it-value-2 {
+    &-item {
+        padding: 40px;
+        padding-bottom: 30px;
+        background-color: var(--it-theme-3);
+        & p {
+            line-height: 30px;
+            margin-bottom: 0;
+            @media #{$lg,$md,$xs}{
+                font-size: 15px;
+            }
+        }
+        &:hover{
+            & .it-value-2-icon{
+                & span{
+                    & img{
+                        transform: scale(.8);
+                    }
+                }
+            }
+        }
+    }
+    &-icon {
+        & span {
+            display: inline-block;
+            padding-bottom: 25px;
+            & img{
+                transition: .4s;
+            }
+        }
+    }
+    &-title{
+        margin-bottom: 28px;
+        font-size: 24px;
+    }
+}

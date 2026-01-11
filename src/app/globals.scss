@@ -1,0 +1,143 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'swiper/scss';
+@import 'swiper/scss/autoplay';
+@import 'swiper/scss/free-mode';
+@import 'swiper/scss/effect-fade';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import '../../public/assets/scss/main.scss';
+
+:root {
+  --it-ff-body: var(--font-cairo), sans-serif;
+  --it-ff-heading: var(--font-cairo), sans-serif;
+  --it-ff-arabic: var(--font-cairo), sans-serif;
+  
+  /* Additional font variables from template */
+  --it-ff-space: var(--font-cairo), sans-serif;
+  --it-ff-inter: var(--font-cairo), sans-serif;
+  --it-ff-monserat: var(--font-cairo), sans-serif;
+  
+  /* Update other font variables if they exist in main.scss */
+  --tp-ff-body: var(--font-cairo), sans-serif;
+  --tp-ff-heading: var(--font-cairo), sans-serif;
+}
+
+/* Apply Cairo font globally */
+body {
+  font-family: var(--font-cairo), sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cairo), sans-serif !important;
+}
+
+/* RTL Support for Arabic */
+html[dir="rtl"] {
+  text-align: right;
+  
+  body {
+    font-family: var(--font-cairo), sans-serif;
+  }
+
+  /* Header RTL adjustments */
+  .it-header-main-menu {
+    text-align: right;
+  }
+
+  .it-header-logo {
+    text-align: right;
+  }
+
+  .it-menu-content ul li {
+    text-align: right;
+  }
+
+  /* Dropdown menu RTL */
+  .it-submenu {
+    left: auto;
+    right: 0;
+    text-align: right;
+  }
+
+  .has-dropdown::after {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  /* Footer RTL */
+  .it-footer-widget {
+    text-align: right;
+  }
+
+  /* Hero section RTL */
+  .it-hero-title,
+  .it-hero-text,
+  .it-section-title-1,
+  .it-section-subtitle-1 {
+    text-align: right;
+  }
+
+  /* About section RTL */
+  .it-about-5-left-box,
+  .it-about-5-section-box {
+    text-align: right;
+  }
+
+  /* Contact form RTL */
+  .it-contact-4-form-box input,
+  .it-contact-4-form-box textarea {
+    text-align: right;
+  }
+
+  /* Services RTL */
+  .it-service-item {
+    text-align: right;
+  }
+
+  /* Button RTL adjustments */
+  .it-btn-main span::after {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  /* Language switcher positioning */
+  .language-switcher {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  /* Breadcrumb RTL */
+  .it-breadcrumb-content {
+    text-align: right;
+  }
+
+  /* General text alignment */
+  p, h1, h2, h3, h4, h5, h6, span, a {
+    text-align: inherit;
+  }
+
+  /* Flip icons for RTL */
+  .fa-arrow-right::before {
+    content: "\f060"; /* Arrow left */
+  }
+
+  .fa-arrow-left::before {
+    content: "\f061"; /* Arrow right */
+  }
+
+  /* Fix flex direction for RTL */
+  .d-flex {
+    &.flex-row {
+      flex-direction: row-reverse;
+    }
+  }
+
+  /* Row reverse for RTL layout */
+  .row {
+    flex-direction: row-reverse;
+  }
+}
+

@@ -1,0 +1,227 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  24. video css start
+/*----------------------------------------*/
+.it-video-2 {
+    &-bg {
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 640px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @media #{$lg}{
+            height: 580px;
+        }
+        @media #{$md,$xs}{
+            height: 350px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(14, 14, 14);
+            opacity: 0.4;
+        }
+    }
+    &-icon {
+        & a {
+            color: var(--it-theme-1);
+            display: inline-block;
+            height:140px;
+            width: 140px;
+            border-radius: 50%;
+            line-height: 140px;
+            border: 1px solid var(--it-common-white);
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            @media #{$md,$xs}{
+                height:90px;
+                width: 90px;
+                line-height: 90px;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.285);
+                animation: borderanimate2 3s linear infinite;
+                z-index: -2;
+                border-radius: 50%;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.285);
+                animation: borderanimate2 2.3s linear infinite;
+                z-index: -2;
+                border-radius: 50%;
+            }
+        }
+    }
+    &-shape {
+        position: absolute;
+        bottom: 60px;
+        right: 90px;
+        z-index: 1;
+        animation: rotate2 15s linear infinite;
+    }
+    &-content-wrap{
+        position: absolute;
+        top: 400px;
+        right: 300px;
+        @media #{$xxxl}{
+            right: 130px;
+        }
+        @media #{$xxl}{
+            right: 100px;
+            top: 340px;
+        }
+        @media #{$xl}{
+            top: 340px;
+            right: 80px;
+        }
+        @media #{$lg}{
+            top: 340px;
+            right: 80px;
+        }
+        @media #{$md}{
+            top: 421px;
+            right: 350px;
+        }
+    }
+}
+.it-video-4{
+    &-bg {
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 640px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media #{$xl}{
+            height: 570px;
+        }
+        @media #{$lg}{
+            height: 500px;
+        }
+        @media #{$md,$xs}{
+            height: 470px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #0e0e0e;
+            opacity: 0.78;
+        }
+    }
+    &-icon {
+        position: relative;
+        @media #{$xs}{
+            display: none;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 264px;
+            left: 50%;
+            height: 250px;
+            width: 1px;
+            transform: translateY(-50%);
+            background-color: var(--it-common-white);            
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            height: 250px;
+            width: 1px;
+            transform: translateY(-50%);
+            background-color: var(--it-common-white);
+        }
+        & a {
+            color: var(--it-theme-1);
+            display: inline-block;
+            height:140px;
+            width: 140px;
+            border-radius: 50%;
+            line-height: 140px;
+            border: 1px solid var(--it-common-white);
+            text-align: center;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.285);
+                animation: borderanimate2 3s linear infinite;
+                z-index: -2;
+                border-radius: 50%;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.285);
+                animation: borderanimate2 2.7s linear infinite;
+                z-index: -2;
+                border-radius: 50%;
+            }
+        }
+    }
+    &-title {
+        font-size: 48px;
+        @media #{$xxl}{
+            font-size: 45px;
+        }
+        @media #{$xl}{
+            font-size: 44px;
+        }
+        @media #{$lg}{
+            font-size: 39px;
+        }
+        @media #{$md}{
+            font-size: 33px;
+        }
+        @media #{$xs}{
+            font-size: 30px;
+            & br {
+                display: none;
+            }
+        }
+        @media #{$sm}{
+            font-size: 35px;
+            & br {
+                display: none;
+            }
+        }
+    }
+} 

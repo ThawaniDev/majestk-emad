@@ -1,0 +1,104 @@
+@use '../utils' as *;
+
+
+.it-section-title-1 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--it-common-white);
+    margin-bottom: 0;
+    @media #{$xxl}{
+        font-size: 46px;
+    }
+    @media #{$xl}{
+        font-size: 42px;
+    }
+    @media #{$lg}{
+        font-size: 35px;
+    }
+    @media #{$md}{
+        font-size: 37px;
+        & br {
+            display: none;
+        }
+    }
+    @media #{$xs}{
+        font-size: 26px;
+        & br {
+            display: none;
+        }
+    }
+}
+.it-section-subtitle-1{
+    display:block;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--it-theme-1);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+/** slider title goes here **/
+
+.it-hero-title {
+    font-weight: 700;
+    font-size: 120px;
+    color: var(--it-common-white);
+    @media #{$xxxl}{
+        font-size: 110px;
+    }
+    @media #{$xxl}{
+        font-size: 105px;
+    }
+    @media #{$xl}{
+        font-size: 80px;
+    }
+    @media #{$lg}{
+        font-size: 74px;
+    }
+    @media #{$md}{
+        font-size: 73px;
+        & br {
+            display: none;
+        }
+    }
+    @media #{$xs}{
+        font-size: 55px;
+        & br {
+            display: none;
+        }
+    }
+    @media #{$xs}{
+        font-size: 56px;
+    }
+    @media only screen and (min-width:440px) and (max-width:575px){
+        font-size: 49px;
+    }
+}
+.it-hero-2-title {
+    font-weight: 700;
+    font-size: 100px;
+    color: var(--it-common-white);
+    @media #{$xxl}{
+        font-size: 93px;
+    }
+    @media #{$xl}{
+        font-size: 85px;
+    }
+    @media #{$lg}{
+        font-size: 80px;
+    }
+    @media #{$md}{
+        font-size: 73px;
+        & br {
+            display: none;
+        }
+    }
+    @media #{$xs}{
+        font-size: 52px;
+        & br {
+            display: none;
+        }
+    }
+      
+}

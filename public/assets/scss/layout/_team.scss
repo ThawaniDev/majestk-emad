@@ -1,0 +1,431 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  20. team css start
+/*----------------------------------------*/
+
+.it-team {
+  &-item {
+    &:hover {
+      & .it-team-content {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+      }
+      & .it-team-thumb {
+        & img {
+          transform: scale(1.1) rotate(-2deg);
+        }
+      }
+    }
+  }
+  &-thumb {
+    overflow: hidden;
+    & img {
+      transition: 0.5s;
+    }
+  }
+  &-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    background-color: var(--it-common-white);
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    & span {
+      color: var(--it-common-black);
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    &-title {
+      color: var(--it-common-black);
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 30px;
+      transition: 0.3s;
+      &:hover {
+        color: var(--it-theme-1);
+      }
+    }
+    &-social {
+      & a {
+        font-size: 16px;
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        border: 1px solid var(--it-common-black);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 36px;
+        color: var(--it-common-black);
+        margin: 0 5px;
+        transition: 0.3s;
+        &:hover {
+          background-color: var(--it-theme-1);
+          color: var(--it-common-white);
+          border: 1px solid var(--it-theme-1);
+        }
+      }
+    }
+  }
+  &-shape {
+    &-1 {
+      position: absolute;
+      top: 80px;
+      right: -3%;
+      animation: rotate2 15s linear infinite;
+    }
+    &-2 {
+      position: absolute;
+      bottom: 16%;
+      left: 7%;
+      animation: moving 9s linear infinite;
+      @media #{$xxl} {
+        bottom: 5%;
+        left: 5%;
+      }
+      @media #{$xl} {
+        bottom: 5%;
+        left: 5%;
+      }
+    }
+  }
+  &-active {
+    margin-right: -395px;
+    @media #{$xs} {
+      margin-right: 0;
+    }
+  }
+}
+.team-slider-dots {
+  text-align: center;
+  margin-top: 60px;
+  & .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 8px;
+    display: inline-block;
+    background-color: var(--it-common-white);
+    opacity: 1;
+    transition: 0.3s;
+  }
+  & .swiper-pagination-bullet-active {
+    background-color: var(--it-theme-1);
+    &.swiper-pagination-bullet {
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  @media #{$md,$xs} {
+    display: none;
+  }
+}
+.it-team-4 {
+  &-item {
+    &:hover {
+      & .it-team-4-thumb {
+        & img {
+          transform: scale(1.2) rotate(-2deg);
+        }
+      }
+    }
+  }
+  &-thumb {
+    overflow: hidden;
+    & img {
+      transition: 0.9s;
+      width: 100%;
+    }
+  }
+  &-content {
+    padding: 30px;
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    transition: 0.3s;
+    &:hover {
+      color: var(--it-theme-1);
+    }
+  }
+  &-info {
+    & span {
+      display: block;
+      margin-bottom: 7px;
+    }
+  }
+  &-social {
+    & a {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      line-height: 35px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 0 5px;
+      color: var(--it-common-white);
+      background-color: #212121;
+      transition: 0.3s;
+      &:hover {
+        background-color: var(--it-common-black);
+        color: var(--it-theme-1);
+      }
+    }
+  }
+}
+.it-team-box {
+  & .it-team-shape-1 {
+    right: 30px;
+    animation: rotate2 15s linear infinite;
+  }
+}
+
+.it-team-details {
+  &__item {
+    margin-right: 70px;
+    @media #{$md,$xs} {
+      margin-right: 0;
+    }
+  }
+  &__thumb {
+    @media #{$md,$xs} {
+      margin-bottom: 30px;
+    }
+    & img {
+      @media #{$md,$xs} {
+        width: 100%;
+      }
+    }
+  }
+  &__big-text {
+    position: absolute;
+    top: 31%;
+    left: 8%;
+    font-size: 120px;
+    transform: rotate(-90deg);
+    margin-bottom: 0;
+    @media #{$xl} {
+      left: 3%;
+    }
+  }
+  &__bg {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    @media #{$md} {
+      padding: 50px;
+    }
+    @media #{$xs} {
+      padding: 30px 15px;
+    }
+    &::after {
+      position: absolute;
+      background-color: var(--it-grey-1);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      content: '';
+      z-index: -1;
+      @media #{$md,$xs} {
+        display: none;
+      }
+    }
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    @media #{$lg} {
+      font-size: 35px;
+    }
+    @media #{$md,$xs} {
+      font-size: 24px;
+    }
+  }
+  &__content {
+    padding-bottom: 65px;
+    @media #{$md,$xs} {
+      padding-bottom: 20px;
+    }
+    & > span {
+      display: block;
+      padding-bottom: 15px;
+      text-transform: capitalize;
+      & > strong {
+        color: var(--it-common-white);
+        font-size: 16px;
+      }
+      & a {
+        transition: 0.3s;
+        &:hover {
+          color: var(--it-theme-1);
+        }
+      }
+    }
+  }
+  &__social {
+    & a {
+      & i {
+        height: 38px;
+        display: inline-block;
+        width: 38px;
+        line-height: 38px;
+        border-radius: 50%;
+        background-color: #4661c5;
+        color: var(--it-common-white);
+        text-align: center;
+        margin-left: 5px;
+        &.instagram {
+          background-color: #1da1f2;
+        }
+        &.linkedin {
+          background-color: #c935a0;
+        }
+        &.twitter {
+          background-color: #0073b0;
+        }
+      }
+    }
+  }
+  &__section-box {
+    & span {
+      display: inline-block;
+      padding-bottom: 35px;
+    }
+  }
+  &__text-box {
+    & p {
+      padding-right: 25px;
+      @media #{$lg,$md,$xs} {
+        font-size: 14px;
+        padding-right: 0;
+      }
+    }
+  }
+  &__title-sm {
+    font-size: 23px;
+    padding-bottom: 3px;
+    @media #{$xl,$lg,$md,$xs} {
+      font-size: 20px;
+    }
+  }
+  &__progress {
+    width: 100%;
+  }
+  &__progress-item {
+    position: relative;
+    @media #{$xs} {
+      padding-bottom: 30px;
+    }
+    &.progress-pb {
+      padding-bottom: 30px;
+    }
+    & h4 {
+      font-weight: 800;
+      font-size: 18px;
+      padding-bottom: 4px;
+      @media #{$xl,$lg,$md,$xs} {
+        font-size: 15px;
+      }
+    }
+    & .progress-count {
+      position: absolute;
+      top: 3px;
+      right: 0;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--it-theme-1);
+    }
+    & .progress {
+      height: 4px;
+      background-color: #f5f3ee;
+      border-radius: 0;
+      overflow: visible;
+      margin-bottom: 30px;
+      & .progress-bar {
+        background-color: var(--it-theme-1);
+        overflow: visible;
+      }
+    }
+    & .progress-goals {
+      display: flex;
+      justify-content: space-between;
+      & span {
+        font-size: 14px;
+        font-weight: 400;
+        & b {
+          font-weight: 800;
+          color: var(--it-theme-1);
+        }
+      }
+    }
+  }
+}
+.details-cols-2 {
+  padding-left: 15px;
+  @media #{$md,$xs} {
+    padding-left: 0;
+  }
+}
+.details-cols-3 {
+  padding-left: 75px;
+  @media #{$lg,$md,$xs} {
+    padding-left: 0;
+  }
+}
+
+.it-progress-bar {
+  &-item {
+    padding: 5px 0px;
+    overflow: hidden;
+    padding-top: 0;
+    @media #{$lg} {
+      padding-top: 20px;
+    }
+    & label {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 16px;
+      display: inline-block;
+      color: var(--it-common-white);
+      @media #{$xs} {
+        font-size: 14px;
+      }
+    }
+  }
+  & .progress {
+    overflow: visible;
+    background: #f3e8df;
+    height: 8px;
+    border-radius: 1000px;
+  }
+  & .progress-bar {
+    background-color: var(--it-theme-1);
+    position: relative;
+    overflow: visible;
+    height: 100%;
+    top: 0;
+    border-radius: 1000px;
+  }
+  & .progress-bar span {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--it-common-red);
+  }
+}

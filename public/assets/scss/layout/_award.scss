@@ -1,0 +1,131 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  05. award css start
+/*----------------------------------------*/
+.it-award {
+    &-thumb {
+        & img {
+            max-width: inherit;
+            margin-top: -75px; 
+            margin-bottom: 75px;
+            @media #{$md,$xs}{
+                max-width: 1005;
+                margin-top: 0px; 
+                margin-bottom: 30px;
+             }
+        }
+    }
+    &-left-box {
+        padding: 60px 0 55px 60px;
+        height: 100%;
+        padding-right: 375px;
+        margin-left: 120px;
+        @media #{$xxxl}{
+            padding-right: 175px;
+        }
+        @media #{$xxl}{
+            padding-right: 100px;
+        }
+        @media #{$xl}{
+            padding: 60px 0 55px 30px;
+            padding-right: 30px;
+            margin-left: 40px;
+        }
+        @media #{$lg}{
+            padding: 60px 0 55px 30px;
+            padding-right: 30px;
+            margin-left: 0px;
+        }
+        @media #{$md,$xs}{
+            padding: 60px 20px;
+            margin-left: 0px;
+            margin-bottom: 50px;
+        }
+    }
+    &-list-box {
+        margin-left: 110px;
+        @media #{$xxl}{
+            margin-left: 50px;
+        }
+        @media #{$xl}{
+            margin-left: 30px;
+        }
+        @media #{$lg}{
+            margin-left: 20px;
+        }
+        @media #{$md,$xs}{
+            margin-left: 0px;
+        }
+        & ul {
+            & li {
+                padding: 30px 0;
+                list-style-type: none;
+                border-bottom: 1px solid #323235;
+            }
+        }
+    }
+    &-wrap{
+        padding: 20px 0;
+        @media #{$xs}{
+            flex-wrap: wrap;
+        }  
+    }
+    &-number {
+        @media #{$xs}{
+            flex-wrap: wrap;
+        }  
+        & i {
+            font-size: 16px;
+            color: #888888;
+            font-style: normal;
+            margin-right: 80px;
+            margin-left: 30px;
+            @media #{$xs}{
+                margin-bottom: 20px;
+            }  
+        }
+    }
+    &-content {        
+        & span {
+            color: var(--it-common-white);
+            @media #{$xl}{
+                font-size: 14px;
+            }
+            @media #{$lg}{
+                font-size: 15px;
+            }
+            @media #{$md,$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+    &-title{
+        font-size: 32px;
+        font-weight: 700;
+        width: 200px;
+        margin-right: 60px;
+        @media #{$xxl}{
+            font-size: 30px;
+        }
+        @media #{$xl}{
+            font-size: 28px;
+        }
+        @media #{$lg}{
+            font-size: 25px;
+            margin-right: 40px;
+        }
+        @media #{$md}{
+            font-size: 25px;
+            margin-right: 40px;
+        }
+        @media #{$xs}{
+            font-size: 25px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+        }
+        @media #{$sm}{
+            margin-right: 20px;
+        }
+    }
+}

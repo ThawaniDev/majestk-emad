@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'flaticon_xoft';
+  src: url('../fonts/flaticon_xoft.ttf?6568506eccdb44be131f2867e0eaaaf0')
+      format('truetype'),
+    url('../fonts/flaticon_xoft.woff?6568506eccdb44be131f2867e0eaaaf0')
+      format('woff'),
+    url('../fonts/flaticon_xoft.woff2?6568506eccdb44be131f2867e0eaaaf0')
+      format('woff2'),
+    url('../fonts/flaticon_xoft.eot?6568506eccdb44be131f2867e0eaaaf0#iefix')
+      format('embedded-opentype');
+  /* url("../fonts/flaticon_xoft.svg?6568506eccdb44be131f2867e0eaaaf0#flaticon_xoft") format("svg"); */
+}
+
+i[class^='flaticon-']:before,
+i[class*=' flaticon-']:before {
+  font-family: flaticon_xoft !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-share-arrow:before {
+  content: '\f101';
+}
+.flaticon-instagram:before {
+  content: '\f102';
+}
+.flaticon-play-button:before {
+  content: '\f103';
+}
+.flaticon-right-arrow:before {
+  content: '\f104';
+}
+.flaticon-sparkle:before {
+  content: '\f105';
+}
+.flaticon-draw-check-mark:before {
+  content: '\f106';
+}
+.flaticon-loupe:before {
+  content: '\f107';
+}
+.flaticon-shopping-cart:before {
+  content: '\f108';
+}
+.flaticon-project-management:before {
+  content: '\f109';
+}
+.flaticon-customer-service:before {
+  content: '\f10a';
+}
+.flaticon-trophy:before {
+  content: '\f10b';
+}
+.flaticon-coffee:before {
+  content: '\f10c';
+}
+.flaticon-facebook-app-symbol:before {
+  content: '\f10d';
+}
+.flaticon-instagram-1:before {
+  content: '\f10e';
+}
+.flaticon-linkedin:before {
+  content: '\f10f';
+}
+.flaticon-twitter:before {
+  content: '\f110';
+}
+.flaticon-send:before {
+  content: '\f111';
+}
+.flaticon-solution:before {
+  content: '\f112';
+}
+.flaticon-brush:before {
+  content: '\f113';
+}
+.flaticon-layers:before {
+  content: '\f114';
+}
+.flaticon-solution-1:before {
+  content: '\f115';
+}
+.flaticon-mouse-cursor:before {
+  content: '\f116';
+}
+.flaticon-digital-marketing:before {
+  content: '\f117';
+}
+.flaticon-ux-design:before {
+  content: '\f118';
+}
+.flaticon-growth:before {
+  content: '\f119';
+}
+.flaticon-product-owner:before {
+  content: '\f11a';
+}
+.flaticon-analytics:before {
+  content: '\f11b';
+}
+.flaticon-check-mark:before {
+  content: '\f11c';
+}
+.flaticon-down-arrow:before {
+  content: '\f11d';
+}
+.flaticon-diagonal-arrow:before {
+  content: '\f11e';
+}
+.flaticon-unfold:before {
+  content: '\f11f';
+}
+.flaticon-calendar:before {
+  content: '\f120';
+}
+.flaticon-user:before {
+  content: '\f121';
+}
+.flaticon-right-quote-sign:before {
+  content: '\f122';
+}
+.flaticon-share:before {
+  content: '\f123';
+}
+.flaticon-clock:before {
+  content: '\f124';
+}

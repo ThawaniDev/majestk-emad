@@ -1,0 +1,231 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  25. footer css start
+/*----------------------------------------*/
+
+.it-footer {
+    &-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &::after{
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: rgb(14, 14, 14);
+            opacity: 0.902;
+        }
+    }
+    &-widget {
+        position: relative;
+        z-index: 1;
+        &-title {
+            font-size: 24px;
+            margin-bottom:31px;
+            @media #{$lg,$md,$xs}{
+                font-size: 20px;
+            }
+        }
+        &-content {
+            & p {
+                font-weight: 500;
+                color: var(--it-common-white);
+                @media #{$lg,$md,$xs}{
+                    font-size: 14px;
+                }
+            }
+            & ul {
+                & li {
+                    list-style: none;
+                    &:not(:last-child){
+                        margin-bottom: 17px;
+                    }
+                    & a {
+                        color: var(--it-common-white);
+                        font-weight: 500;
+                        transition: .3s;
+                        &:hover {
+                            color: var(--it-theme-1);
+                        }
+                        @media #{$lg,$md,$xs}{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        &-list{
+            & ul {
+                & li {
+                    &:not(:last-child){
+                        margin-bottom: 17px;
+                    }
+                    list-style-type: none;
+                    overflow: hidden;
+                    & a {
+                        padding-left: 0px;
+                        font-weight: 500;
+                        color: var(--it-common-white);
+                        position: relative;
+                        display: inline-block;
+                        transition: .3s;
+                        @media #{$lg,$md,$xs}{
+                            font-size: 14px;
+                        }
+                        &:hover {
+                            padding-left: 15px;
+                            color: var(--it-theme-1);
+                            &::after{
+                                left: 0;
+                            }
+                        }
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            left: -20px;
+                            top: 6px;
+                            height: 7px;
+                            width: 7px;
+                            border-radius: 50%;
+                            position: absolute;
+                            background-color: var(--it-theme-1);
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+        &-input-box {
+            position: relative;
+            margin-top: -14px;
+            margin-bottom: 30px;
+            & input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid var(--it-border-1);
+                height: 50px;
+                line-height: 50px;
+                padding-left: 0;
+                padding-right: 60px;
+                color: var(--it-common-white);
+                font-weight: 500;
+                width: 100%;
+            }
+        }
+        &-button-box{
+            position: absolute;
+            right: 0;
+            top:12px;
+            & span {
+                color: var(--it-theme-1);
+                font-size: 18px;
+            }
+        }
+        &-text {
+            & p {
+                font-weight: 500;
+                line-height: 30px;
+                margin-bottom: 25px;
+                @media #{$lg,$md,$xs}{
+                    font-size: 14px;
+                }
+            }
+        }
+        &-social {
+            & a {
+                font-size: 16px;
+                color: var(--it-common-white);
+                margin-right: 10px;
+                transform: .3s;
+                &:hover {
+                    color: var(--it-theme-1);
+                }
+            }
+        }
+        &-social-2 {
+            & a {
+                font-size: 16px;
+                font-weight: 500;
+                margin-right: 10px;
+                transform: .3s;
+                text-transform: uppercase;
+                color: var(--it-common-white);
+                &:hover {
+                    color: var(--it-theme-1);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.footer-cols-2{
+    padding-left: 45px;
+    @media #{$md,$xs}{
+        padding-left: 0;
+    }
+}
+.footer-cols-3{
+    padding-left: 85px;
+    @media #{$md,$xs}{
+        padding-left: 0;
+    }
+}
+.it-shape-1{
+    position: absolute;
+    top: 11px;
+    left: 0;
+    z-index: -1;
+    @media #{$lg,$md,$xs} {
+        & svg {
+            max-width: 100%;
+        }
+    }
+}
+/*-- copyright css start here--*/ 
+
+.it-copyright {
+    &-space{
+        border-top: 1px solid var(--it-border-1);
+        padding: 27px 0;
+    }
+    &-text {
+        @media #{$xs}{
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        @media only screen and (min-width:440px) and (max-width:575px){
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        & p {
+            font-weight: 500;
+            margin-bottom: 0;
+            @media #{$lg,$md}{
+                font-size: 14px;
+            }
+            @media #{$xs}{
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            @media #{$sm}{
+                margin-bottom: 0px;
+            }
+            @media only screen and (min-width:440px) and (max-width:575px){
+               margin-bottom: 0;
+            }
+            & b {
+                color: var(--it-common-white);
+            }
+        }
+        & span {
+            font-weight: 500;
+            @media #{$lg,$md,$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+}

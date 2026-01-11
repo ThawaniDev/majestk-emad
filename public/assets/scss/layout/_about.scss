@@ -1,0 +1,329 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  04. about css start
+/*----------------------------------------*/
+
+.it-about-2 {
+  &-button-text {
+    & span {
+      font-weight: 700;
+      display: inline-block;
+      line-height: 0;
+      @media #{$lg} {
+        font-size: 14px;
+      }
+      @media #{$xs} {
+        line-height: 1;
+        margin-top: 20px;
+      }
+      @media #{$sm} {
+        line-height: 0;
+        margin-top: 0px;
+      }
+
+      & b {
+        font-family: var(--it-ff-heading);
+        font-size: 80px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        color: transparent;
+        margin-right: 10px;
+        margin-left: 40px;
+        @media #{$lg} {
+          font-size: 50px;
+          margin-right: 10px;
+          margin-left: 20px;
+        }
+        @media #{$xs} {
+          margin-left: 0;
+        }
+        @media #{$sm} {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  &-section-box {
+    & p {
+      line-height: 30px;
+      margin-bottom: 35px;
+      @media #{$lg,$md,$xs} {
+        font-size: 14px;
+      }
+    }
+    & span {
+      color: var(--it-theme-1);
+      display: block;
+      padding-bottom: 20px;
+    }
+  }
+  &-thumb-box {
+    margin-left: -95px;
+    @media #{$xl,$lg} {
+      margin-left: 0;
+    }
+    @media #{$md,$xs} {
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    & img {
+      max-width: inherit;
+      @media #{$xl,$lg,$md,$xs} {
+        max-width: 100%;
+      }
+    }
+  }
+  &-right-box {
+    margin-left: 70px;
+    @media #{$lg,$md,$xs} {
+      margin-left: 0;
+    }
+  }
+  &-button {
+    @media #{$xs} {
+      flex-wrap: wrap;
+    }
+  }
+}
+.it-about-3 {
+  &-left-box {
+    @media #{$md,$xs} {
+      margin-bottom: 50px;
+    }
+    & .it-section-title-1 {
+      margin-right: -160px;
+      @media #{$md,$xs} {
+        margin-right: 0;
+      }
+    }
+  }
+  &-text {
+    & p {
+      line-height: 30px;
+      margin-bottom: 44px;
+      @media #{$lg,$md,$xs} {
+        font-size: 14px;
+      }
+    }
+  }
+  &-icon {
+    &-box {
+      margin-bottom: 48px;
+    }
+    & span {
+      margin-right: 20px;
+      font-size: 40px;
+      color: var(--it-theme-1);
+      display: inline-block;
+    }
+    &-text {
+      & p {
+        line-height: 30px;
+        margin-bottom: 0;
+        @media #{$lg,$md} {
+          font-size: 14px;
+        }
+        @media #{$xs} {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  &-title-sm {
+    font-size: 22px;
+    @media #{$xs} {
+      font-size: 18px;
+    }
+  }
+  &-content {
+    margin-right: 75px;
+    @media #{$lg} {
+      margin-right: 40px;
+    }
+    @media #{$md,$xs} {
+      margin-right: 0px;
+    }
+  }
+  &-main-thumb {
+    margin-bottom: 12px;
+    & img {
+      @media #{$md,$xs} {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &-thumb {
+    &-box {
+      margin-right: 60px;
+      @media #{$lg,$md,$xs} {
+        margin-right: 0;
+      }
+    }
+    &-sm-1 {
+      position: absolute;
+      top: 30px;
+      left: 36px;
+      @media #{$xl} {
+        left: 7px;
+      }
+      @media #{$lg} {
+        left: -20px;
+      }
+      @media #{$md,$xs} {
+        position: static;
+      }
+      & img {
+        @media #{$md,$xs} {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &-sm-2 {
+      & img {
+        @media #{$md,$xs} {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-shape {
+    &-1 {
+      position: absolute;
+      right: -85px;
+      top: 95px;
+      animation: tpupdown 0.8s infinite alternate;
+      @media #{$xl} {
+        right: -60px;
+      }
+    }
+    &-2 {
+      position: absolute;
+      left: 90px;
+      bottom: 75px;
+      animation: tpupdown 0.6s infinite alternate;
+    }
+    &-3 {
+      position: absolute;
+      left: -160px;
+      bottom: 0px;
+      animation: rotate2 15s linear infinite;
+    }
+  }
+}
+.it-about-5 {
+  &-space {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @media #{$md,$xs} {
+      padding-bottom: 0;
+    }
+  }
+  &-left-box {
+    @media #{$md,$xs} {
+      margin-bottom: 50px;
+    }
+  }
+  &-content {
+    & p {
+      line-height: 30px;
+      margin-bottom: 40px;
+      padding-right: 105px;
+      @media #{$lg,$md} {
+        font-size: 14px;
+      }
+      @media #{$xs} {
+        font-size: 14px;
+        padding-right: 0;
+      }
+    }
+    &-icon-box {
+      & span {
+        margin-right: 28px;
+      }
+      & h5 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 0;
+        @media #{$lg,$md,$xs} {
+          font-size: 17px;
+          line-height: 26px;
+        }
+      }
+    }
+    &-list {
+      & ul {
+        & li {
+          font-weight: 500;
+          font-size: 18px;
+          list-style-type: none;
+          position: relative;
+          padding-left: 40px;
+          color: var(--it-common-white);
+          font-family: var(--it-ff-heading);
+          @media #{$lg,$md} {
+            font-size: 16px;
+          }
+          @media #{$xs} {
+            font-size: 15px;
+          }
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          & span {
+            position: absolute;
+            top: -1px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  &-thumb-2 {
+    position: absolute;
+    bottom: -195px;
+    left: -190px;
+    @media #{$lg} {
+      left: -130px;
+    }
+    @media #{$md,$xs} {
+      position: static;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+  &-main-thumb {
+    @media #{$md,$xs} {
+      margin-bottom: 20px;
+    }
+    & img {
+      @media #{$md,$xs} {
+        width: 100%;
+      }
+    }
+  }
+  &-shape {
+    &-1 {
+      position: absolute;
+      top: 90px;
+      left: 20px;
+      animation: rotate2 15s linear infinite;
+      @media #{$xxl} {
+        left: 5%;
+      }
+      @media #{$xl} {
+        left: 1%;
+      }
+    }
+    &-2 {
+      position: absolute;
+      bottom: -90px;
+      right: 25px;
+    }
+  }
+}

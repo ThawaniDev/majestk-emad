@@ -1,0 +1,17 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  07. brand css start
+/*----------------------------------------*/
+.it-brand-2{
+    &-border {
+        border-top: 1px solid #333333;
+    }
+    &-item {
+        & span {
+            & svg {
+                color: var(--it-theme-1);
+            }
+        }
+    }
+}

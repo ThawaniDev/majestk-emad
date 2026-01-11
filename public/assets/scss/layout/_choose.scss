@@ -1,0 +1,90 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  08. choose css start
+/*----------------------------------------*/
+.it-choose-5{
+    &-left-box {
+        @media #{$md,$xs}{
+            margin-bottom: 50px;
+        }
+    }
+    &-text {
+        & p {
+            line-height: 30px;
+        }
+    }
+    &-icon {
+        &-wrap{
+            @media #{$xs}{
+                flex-wrap: wrap;
+            }
+            @media #{$sm}{
+                flex-wrap: nowrap;
+            }
+        }
+        & span {
+            font-size: 60px;
+            height: 85px;
+            line-height: 105px;
+            text-align: center;
+            width: 85px;
+            background-color: var(--it-common-black);
+            color: var(--it-theme-1);
+            display: inline-block;
+            margin-right: 25px;
+            @media #{$xs}{
+                margin-bottom: 20px;
+            }
+            @media #{$sm}{
+                margin-bottom: 0px;
+            }
+        }
+        &-text {
+            & h5 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            & p {
+                line-height: 30px;
+            }
+        }
+    }
+    &-thumb {
+        position: relative;
+        &::after{
+           content: '';
+           position: absolute;
+           top: 30px;
+           left: 35.2%;
+           width: 10px;
+           height: 208px;
+           background-color: var(--it-theme-1); 
+           animation: tpupdown 0.8s infinite alternate;
+           @media #{$xl,$lg,$md,$xs}{
+            display: none;
+            }          
+        }
+        & img {
+            @media #{$md,$xs}{
+                width: 100%;
+            } 
+        }
+        &-sm {
+            position: absolute;
+            left: 30px;
+            bottom: -130px;
+            border: 12px solid var(--it-common-black-2);
+            @media #{$md,$xs}{
+                position: static;
+                margin-top: 20px;
+            }
+            & img {
+                @media #{$md,$xs}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
