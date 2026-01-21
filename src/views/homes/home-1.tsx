@@ -51,7 +51,7 @@ const HomeMain = () => {
             {/* <TestimonialOne /> */}
             {/* <BlogOne />/ */}
             {/* <InstagramOne /> */}
-            <CtaOne />
+            {/* <CtaOne /> */}
           </main>
 
           <Footer />
