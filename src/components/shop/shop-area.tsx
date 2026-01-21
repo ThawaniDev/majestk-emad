@@ -23,7 +23,7 @@ const ShopArea = () => {
   // Memoize sorting logic
   const sortedData = useCallback(
     () => sortProducts(productData, sortOrder),
-    [sortOrder]
+    [sortOrder, productData]
   );
 
   // Handle search query change
