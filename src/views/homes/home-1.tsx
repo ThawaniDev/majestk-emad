@@ -15,8 +15,6 @@ import ServiceOne from '@/components/service/service-one';
 import TextSliderOne from '@/components/text-slider/text-slider-one';
 import PortfolioOne from '@/components/portfolio/portfolio-one';
 import TeamOne from '@/components/team/team-one';
-import InstagramOne from '@/components/instagram/instagram-one';
-import CtaOne from '@/components/cta/cta-one';
 import Footer from '@/layouts/footers/footer';
 
 const HomeMain = () => {
