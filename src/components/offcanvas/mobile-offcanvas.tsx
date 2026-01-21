@@ -77,7 +77,7 @@ const MobileOffCanvas = () => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>{t('contact.email')}</span>
-                <a href="mailto:info@newmajestic.com">info@newmajestic.com</a>
+                <a href="mailto:info@majestictrd.com">info@majestictrd.com</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -88,7 +88,9 @@ const MobileOffCanvas = () => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>{t('contact.phone')}</span>
-                <a href="tel:+20123456789">+20 123 456 789</a>
+                <a href="tel:+201003998008">Egypt: +20 100 399 8008</a><br />
+                <a href="tel:+966508284882">Saudi: +966 50 828 4882</a><br />
+                <a href="tel:+15402043029">USA: +1 (540) 204-3029</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">

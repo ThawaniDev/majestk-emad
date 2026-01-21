@@ -26,15 +26,21 @@ const Footer = () => {
                   </div>
                   <div className="it-footer-widget-content">
                     <p>
-                      {t('contact.addressValue') || 'Address 301 Princes Street, Ei- Mahall Damietta Egypt-104'}
+                      {t('contact.addressValue')}
                     </p>
                     <ul>
                       <li>
-                        <a href="tel:+134353353545">+1 343 5335 3545</a>
+                        <a href="tel:+201003998008">Egypt: +20 100 399 8008</a>
                       </li>
                       <li>
-                        <a href="mailto:xofthelp@gmail.com">
-                          ageohelp@gmail.com
+                        <a href="tel:+966508284882">Saudi: +966 50 828 4882</a>
+                      </li>
+                      <li>
+                        <a href="tel:+15402043029">USA: +1 (540) 204-3029</a>
+                      </li>
+                      <li>
+                        <a href="mailto:info@majestictrd.com">
+                          info@majestictrd.com
                         </a>
                       </li>
                     </ul>

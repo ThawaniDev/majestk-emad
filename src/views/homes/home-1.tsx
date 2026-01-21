@@ -50,7 +50,7 @@ const HomeMain = () => {
             {/* <FunFactOne /> */}
             {/* <TestimonialOne /> */}
             {/* <BlogOne />/ */}
-            <InstagramOne />
+            {/* <InstagramOne /> */}
             <CtaOne />
           </main>
 
